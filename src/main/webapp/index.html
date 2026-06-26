@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Registration</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1e3c72,#2a5298);;
+
+        height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:340px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.container h1{
+    text-align:center;
+    color:#023e8a;
+    margin-bottom:29px;
+    FONT-SIZE:20PX;
+   }
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus{
+    outline:none;
+    border-color:#0077b6;
+    box-shadow:0 0 8px rgba(0,119,182,.3);
+}
+
+.btn{
+    width:100%;
+    padding:13px;
+    background:#0077b6;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#023e8a;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:gray;
+    font-size:14px;
+}
+.logo{
+    text-align:center;
+    margin-left:90px;
+    
+    size:10px;
+    height:90px;
+    color:#0077b6;
+    margin-bottom:15px;
+}
+</style>
+
+</head>
+<body>
+
+
+
+<div class="container">
+<img src="imglogo.jpg" class="logo" alt="">
+<h1>EMPLOYEE REGISTRATION</h1>
+
+<form action="SaveServlet" method="post">
+
+<div class="input-box">
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Enter your name" required>
+</div>
+
+<div class="input-box">
+<label>Password</label>
+<input type="password" name="password" placeholder="Enter password" required>
+</div>
+
+<div class="input-box">
+<label>Email Address</label>
+<input type="email" name="email" placeholder="Enter email" required>
+</div>
+
+<div class="input-box">
+<label>Country</label>
+
+<select name="country">
+<option>India</option>
+<option>Australia</option>
+<option>America</option>
+<option>Japan</option>
+<option>Russia</option>
+<option>Canada</option>
+<option>Germany</option>
+<option>United Kingdom</option>
+</select>
+
+</div>
+
+<input type="submit" value="Register Employee" class="btn">
+
+</form>
+
+<div class="footer">
+Employee Management System © 2026
+</div>
+
+</div>
+
+</body>
+</html>
