@@ -31,6 +31,7 @@ public class SaveServlet extends HttpServlet {
         e.setCountry(country);
 
         int status = 0;
+        response.sendRedirect("view");
 
         try {
             status = DBOperation.save(e);
